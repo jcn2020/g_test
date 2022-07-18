@@ -1,0 +1,1 @@
+The artifacts directory is a custom directory that will be used to house your scripts/files/inventopry files and any other dependencies that your application needs to run.

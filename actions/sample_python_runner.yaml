@@ -1,0 +1,10 @@
+---
+name: sample_python_runner
+pack: fgid_00423_dev_automation
+description: sample python runner
+runner_type: python-script
+entry_point: /opt/stackstorm/packs/fgid_00423_dev_automation/artifacts/samples/helloworld.py
+enabled: true
+parameters:
+    user:
+        type: string

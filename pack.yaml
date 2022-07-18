@@ -1,0 +1,11 @@
+---
+ref: g_test
+name: g_test
+description: Automation pack containing sensors, rules and actions.
+keywords:
+    - 'automation'
+    - 'g_test''
+version: 0.0.1
+author: me
+email: jcn2020@gmail.com
+fgid: 00001

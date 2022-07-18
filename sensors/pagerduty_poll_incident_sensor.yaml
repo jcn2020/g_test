@@ -1,0 +1,23 @@
+class_name: PagerDutyPollIncidentSensor
+entry_point: pagerduty_poll_incident_sensor.py
+description: >-
+  Sensor which polls pager duty incident and emits triggers with Incident
+  Payload
+enabled: false
+poll_interval: 60
+trigger_types:
+  - name: pagerduty_incident_trigger_event
+    description: Trigger which indicates a new pager duty incident fetch action
+    payload_schema:
+      type: object
+      properties:
+        pdteam:
+          type: string
+        pdservice:
+          type: string
+        pdincidentid:
+          type: string
+        channeltype:
+          type: string
+        incidentdetails:
+          type: object

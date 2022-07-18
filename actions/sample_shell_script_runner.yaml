@@ -1,0 +1,11 @@
+---
+name: sample_shell_script_runner
+pack: fgid_00423_dev_automation
+description: sample shell script runner
+runner_type: local-shell-script
+entry_point: /opt/stackstorm/packs/fgid_00423_dev_automation/artifacts/samples/helloworld.sh
+enabled: true
+parameters:
+    user:
+        type: string
+        position: 0
