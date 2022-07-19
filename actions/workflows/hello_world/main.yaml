@@ -15,8 +15,8 @@ tasks:
   hello:
     action: core.echo
     input:
-      message: <% ctx().my_message %>
-  next:
-    - when: <% succeeded() %> 
-      publish: 
-        error: 0
+      message: "<% ctx().my_message %>"
+    next:
+      - when: <% succeeded() %> 
+        publish: 
+          error: 0
