@@ -19,4 +19,4 @@ tasks:
     next:
       - when: <% succeeded() %> 
         publish: 
-          error: 0
+          - error: "0"
