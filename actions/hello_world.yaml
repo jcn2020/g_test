@@ -1,0 +1,13 @@
+---
+name: hello_world
+pack: g_test
+enabled: true
+
+runner_type: orquesta
+entry_point: ./workflows/hello_world/main.yaml
+
+parameters:
+  my_message:
+    type: string
+    default: "Hello World"
+    required: true

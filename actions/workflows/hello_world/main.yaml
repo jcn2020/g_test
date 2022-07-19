@@ -1,0 +1,22 @@
+---
+version: 1.0
+description: "hello World"
+
+input:
+  - my_message 
+
+vars:
+  - error
+
+output:
+  - message: <% ctx().my_message %> 
+
+tasks:
+  hello:
+    action: core.echo
+    input:
+      message: <% ctx().my_message %>
+  next:
+    - when: <% succeeded() %> 
+      publish: 
+        error: 0
