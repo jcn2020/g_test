@@ -9,5 +9,5 @@ entry_point: workflows/hello_world/main.yaml
 parameters:
   my_message:
     type: string
-    default: "Hello World"
+    default: "Hello World from g_test.hello_world"
     required: true
